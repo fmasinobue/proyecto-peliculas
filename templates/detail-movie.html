@@ -6,6 +6,15 @@
     <title>Peli - Detalle</title>
     <link rel="cac-movie icon" href="../static/img/favicon.ico" type="image/x-icon">
 
+    <!-- Fuentes de google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    
+    <script src="https://kit.fontawesome.com/883a12fdd2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./static/css/styles.css">
+
     <!-- <link rel="stylesheet" href="../static/css/styles.css"> -->
 <link rel="stylesheet" href="../static/css/detail.css">
 </head>
@@ -13,8 +22,15 @@
     <header>
         <nav>
             <!-- logo y nombre sitio -->
-            <h1>CaC - Pelis</h1>
-            
+            <div id="movie-detail-logo">
+                    <a href="./index.html">
+                        <!-- aqui icono de fontawesome -->
+                        <i class="fa-solid fa-film fa-spin"></i>
+                        <span class="logo-text"> 
+                        CaC - Pelis!!!!!!!!
+                    </span>
+                 </a>
+         </div>
             <!-- menu de acciones -->
 
             <ul type="square">
@@ -32,7 +48,14 @@
                     API
                 </a>
                 </li>
-                <li>Iniciar sesion</li>
+                <li><a class="btn-primary" href="#">
+                        <!-- aqui icono de fontawesome -->
+                        <i class="fas fa-sign-in-alt"></i>
+                        <span class="login-text">
+                        Iniciar Sesión
+                        </span>    
+                    </a> 
+                </li>
             </ul>
         </nav>
     </header>

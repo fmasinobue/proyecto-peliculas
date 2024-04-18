@@ -20,6 +20,7 @@ rgba(84, 84, 84, 0.7): Este valor define el color de la sombra. Especifica un co
 
 /* diseño de la primer seccion */
 
+
 .movie-detail {
     border: 4px solid black;
     display: flex;
@@ -88,4 +89,80 @@ rgba(84, 84, 84, 0.7): Este valor define el color de la sombra. Especifica un co
 
 
 }
-  
+  /*lsalvo*/
+nav{
+  /* border: 4px solid yellowgreen; */
+  display: flex;
+  /* flex-direction: row; */
+  justify-content:space-between;
+  /* align-items: center; */
+  padding: 0px 50px;
+  height: 60px;
+  background-color:  #db4648;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color);
+  font-size: 1rem;
+}
+
+#movie-detail-logo {
+  /* border: 2px solid red; */
+  font-weight: bold;
+  width: fit-content;
+}
+#movie-detail-logo:hover {
+  animation: movimiento-logo 0.25s infinite;
+}
+
+nav ul {
+  /* border: 4px solid black; */
+  align-items: center;
+
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  /* New le damos z index para colocarlo por encima del div comision y poder dar clic */
+  z-index: 1;
+}
+/* creamos el fotograma */
+@keyframes movimiento-logo {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(5px, 5px) rotate(5deg); }
+  50% { transform: translate(0, 0) rotate(0deg); }
+  75% { transform: translate(-5px, 5px) rotate(-5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.btn-primary{
+  background-color: var(--primary-color);
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  color:#FFF;
+  cursor: pointer;
+}
+
+.btn-primary:hover{
+  color:var(--secondary-color);
+  border-color: var(--secondary-color);
+  transition: all 1s ease;
+
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--color);
+  font-size: 24px;
+  font-family: 'Nunito', Georgia;
+}
+:root {
+  /* Variables de css */
+      --bg-color:#e8e3e9;
+      --bg-input-color: #4f31572c;
+      --primary-color:#9f3647;
+      --secondary-color:#ffc098;
+      --third-color:#db4648;
+      --color: #fff;
+  }
